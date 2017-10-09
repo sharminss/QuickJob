@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="6dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="6dp"
+    tools:context="com.example.asus_x454l.quickjob.viewusers">
+
+    <Button
+        android:layout_width="match_parent"
+        android:text="Image to upload"
+        android:textSize="15dp"
+        android:background="@color/teal"
+        android:onClick="btnBrowse_Click"
+        android:layout_height="30dp" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtImageName"
+        android:hint="enter name"/>
+
+    <EditText
+        android:id="@+id/txtImageName1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtImageName"
+        android:hint="enter  email"
+        android:textSize="18dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtImageName2"
+        android:inputType="phone"
+        android:layout_below="@+id/txtImageName1"
+        android:hint="enter phone"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Edit Info"
+            android:background="@color/teal"
+            android:onClick="btnUpload_Click"
+            android:id="@+id/bu2"
+            android:layout_below="@+id/txtImageName6"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </LinearLayout>
+</LinearLayout>
